@@ -5,13 +5,13 @@ function solveEquation(a, b, c) {
   let result = [];
 
   if (discriminant < 0) {
-    // No roots
+    
     return result;
   } else if (discriminant === 0) {
-    // One root
+    
     result.push(-b / (2 * a));
   } else {
-    // Two roots
+    
     result.push((-b + Math.sqrt(discriminant)) / (2 * a));
     result.push((-b - Math.sqrt(discriminant)) / (2 * a));
   }
